@@ -22,7 +22,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [ 中文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
@@ -57,9 +57,9 @@ speller:
   # 字母表
   alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA"
   delimiter: " '"
-  
+
   initials: 'qwertyuiopasdfghjklzxcvbnmWERTYUIOSDFGHJKL'
-  
+
   # 符號鍵作為強制終止符
   # 這保證了輸入這些符號時，音節立即切分
   finals: "VBNMP"
@@ -84,7 +84,7 @@ speller:
     - xform/^yu/v/
     - xform/^yi?/i/
     - xform/^wu?/u/
-    
+
     # 韻母/介音還原
     - xform/iu/iou/
     - xform/ui/uei/
@@ -123,7 +123,7 @@ speller:
     - xform/ve/LT/
     - xform/eh/T/
     - xform/e/R/
-    
+
     - xform/i/J/
     - xform/u/K/
     - xform/v/L/
